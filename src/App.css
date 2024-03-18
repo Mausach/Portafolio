@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+  margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #000000;
+    /*font-family: 'JosefinSans', sans-serif;*/
+    overflow: hidden;
+  overflow-y: scroll;
+
+    }
+
+/*animacion de burbujas*/
+
+.container{
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    overflow: hidden;
+}
+.burbujas{
+    position: relative;
+    display: flex;
+}
+.burbujas span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #FFC60B;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #5f4e0463,
+    0 0 50px #FFC60B,
+    0 0 100px #FFC60B;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/ var(--i));
+} 
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+/*fin animacion de burbujas*/
+
+.texto-con-sombras-multiples {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.767);
+  }
+  
+ /*animacion para tecnologias*/ 
+  
+  .contenedor {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+  }
+  
+  ul{
+    list-style: none;
+    text-align: center;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+  }
+
+  @keyframes cambiar {
+    0%{
+      margin-top: 0;
+    }
+    20%{
+      margin-top: 0;
+    }
+
+    25%{
+      margin-top: -50px;
+    }
+    50%{
+      margin-top: -50px;
+    }
+
+    55%{
+      margin-top: -100px;
+    }
+    80%{
+      margin-top: -100px;
+    }
+    
+    85%{
+      margin-top: -50px;
+    }
+    95%{
+      margin-top: -50px;
+    }
+
+    100%{
+      margin-top: 0px;
+    }
+  }
+
+  ul , p{
+    margin: 0;
+  }
+  
+  /* BracketAnimation.css */
+.bracket-container {
+  display: flex;
+}
+
+.left-bracket,
+.right-bracket {
+  font-size: 24px;
+  opacity: 0;
+  color: #FFC60B;
+  animation-name: appearDisappear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  margin: 0 5px;
+}
+
+@keyframes appearDisappear {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  width: 600px;
+  height: 430px;
+  border: 2px solid #ccc;
+}
+
+.gallery img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+  
+}
+
+.gallery img:hover{
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.box-relative{
+  padding: 32px;
+  width: 80%;
+  margin:auto;
+  position: relative;
+  
+  
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align:  center; /* Centra verticalmente los elementos en el contenedor */
+  height: 100vh;
+  justify-content: center;
+  gap: 60px;
+}
+
+
+/*galeria de proiec7os*/
