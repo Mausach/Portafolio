@@ -65,7 +65,7 @@ function App() {
           <h1 className='text-white texto-con-sombras-multiples pt-5'>
             Yo Soy Mauro
             <br></br>
-            <br></br>Full Stack Web Developer
+            <br></br>Full Stack Web Developergit status
           </h1>
 
 
