@@ -59,7 +59,7 @@ body{
   
   .contenedor {
     display: flex;
-    width: 300px;
+    width: 350px;
     height: 50px;
     line-height: 50px;
     overflow: hidden;
@@ -69,41 +69,81 @@ body{
     list-style: none;
     text-align: center;
     padding-left: 10px;
-    animation: cambiar 7s infinite;
+    animation: cambiar 15s infinite;
   }
 
   @keyframes cambiar {
-    0%{
+     /*otro prueba 15 interbalos*/
+     0%{
       margin-top: 0;
     }
+    5%{
+      margin-top: 0;
+    }
+    10%{
+      margin-top: 0;
+    }
+    15%{
+      margin-top: 0;
+    }
+
     20%{
-      margin-top: 0;
+      margin-top: -50px;
     }
-
     25%{
-      margin-top: -50px;
-    }
-    50%{
-      margin-top: -50px;
+      margin-top: -100px;
     }
 
-    55%{
-      margin-top: -100px;
+    30%{
+      margin-top: -150px;
     }
-    80%{
-      margin-top: -100px;
+    35%{
+      margin-top: -200px;
     }
     
+    40%{
+      margin-top: -250px;
+    }
+    45%{
+      margin-top: -300px;
+    }
+    50%{
+      margin-top: -350px;
+    }
+    55%{
+      margin-top: -400px;
+    }
+    60%{
+      margin-top: -450px;
+    }
+    65%{
+      margin-top: -500px;
+    }
+    70%{
+      margin-top: -550px;
+    }
+    75%{
+      margin-top: -600px;
+    }
+    80%{
+      margin-top: -650px;
+    }
     85%{
-      margin-top: -50px;
+      margin-top: -700px;
+    }
+    90%{
+      margin-top: -700px;
     }
     95%{
-      margin-top: -50px;
+      margin-top: -700px;
     }
-
     100%{
       margin-top: 0px;
     }
+
+
+    
+    
   }
 
   ul , p{
@@ -142,7 +182,7 @@ body{
     justify-content: center;
     height: 100vh;
     text-align: center;
-    padding: 20px;
+    
 }
 
 .gallery {
@@ -150,6 +190,14 @@ body{
   width: 600px;
   height: 430px;
   border: 2px solid #ccc;
+}
+
+.gallery {
+  display: flex;
+  width: 600px;
+  height: 430px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
 }
 
 .gallery img {
@@ -183,8 +231,26 @@ body{
   text-align:  center; /* Centra verticalmente los elementos en el contenedor */
   height: 100vh;
   justify-content: center;
-  gap: 60px;
+  gap: 40px;
 }
+
+.foto-enmarcada {
+  border: 5px solid #333; /* Grosor y color del marco */
+  border-radius: 50%; /* Hace que el marco sea circular */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del marco circular */
+  width: 300px; /* Ancho del marco */
+  height: 300px; /* Altura del marco */
+}
+
+.foto-enmarcada img {
+  display: block;
+  width: 100%; /* Hace que la imagen ocupe todo el espacio dentro del marco */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+.bg-transparent {
+  background-color: rgba(255, 255, 255, 0.5); /* Ajusta el nivel de opacidad aquí */
+}
+
 
 
 /*galeria de proiec7os*/
