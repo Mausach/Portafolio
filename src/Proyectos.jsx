@@ -14,6 +14,12 @@ import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript } from "react-icons/si";
 
+import HomeBC from './componentes/assets/imgProyectos/Home3.jpg';
+import ASLogin from './componentes/assets/imgProyectos/login.png';
+import AcademiaAdmins from './componentes/assets/imgProyectos/tableroAdminsAcademi.jpg';
+import AgTucuman from './componentes/assets/imgProyectos/agencia_tucuman.png';
+import rollingameImage from './componentes/assets/imgProyectos/rollingame.jpg';
+
 
 import { Footer } from './componentes/Footer'
 
@@ -22,7 +28,6 @@ export const Proyectos = () => {
     <div>
 
 <div>
-
 
 
 <div className='burbujas d-flex justify-content-center align-items-center'>
@@ -85,13 +90,13 @@ export const Proyectos = () => {
     <p className="card-text text-secondary">Es una página completa de menú restaurante con delivery</p>
     <p className="card-text text-secondary">Creado con React, Node.js, Express, MongoDB, Mongoose  </p>
     <h1 className="card-text text-secondary"><FaReact/> <SiJavascript />  <FaNode /> <SiExpress />  <SiMongodb /> <SiMongoosedotws /></h1>
-          <img src="./src/assets/imgProyectos/Home3.jpg" class="img-fluid rounded" alt="Responsive image"/>
+          <img src={HomeBC} className="img-fluid rounded" alt="Responsive image"/>
           <div className="card-body">
             
             
             <a href="https://github.com/Mausach/proyectoFinalRollingCodeFrontend" className="btn btn-outline-warning">
               <h4>
-              <i class="bi bi-link-45deg"> </i>
+              <i className="bi bi-link-45deg"> </i>
               </h4>
             
               Codigo y documentacion</a>
@@ -153,13 +158,13 @@ export const Proyectos = () => {
 realizar aportes sindicales</p>
     <p className="card-text text-secondary">Creado con React, Vite, Node, Express, axios, PostgreSQL, Sequelize y bwip-js </p>
     <h1 className="card-text text-secondary"><FaReact/> <SiVite /> <SiJavascript /> <FaNode /> <SiExpress /> <SiAxios /> <BiLogoPostgresql /> <SiSequelize /> </h1>
-          <img src="./src/assets/imgProyectos/login.png" class="img-fluid rounded" alt="Responsive image"/>
+          <img src={ASLogin} className="img-fluid rounded" alt="Responsive image"/>
           <div className="card-body">
             
             
             <a href="https://github.com/Mausach/AS-ONLINE-FRONT-Demo" className="btn btn-outline-warning">
             <h4>
-              <i class="bi bi-link-45deg"> </i>
+              <i className="bi bi-link-45deg"> </i>
               </h4>
               Codigo y documentacion</a>
           </div>
@@ -224,7 +229,7 @@ realizar aportes sindicales</p>
             <p className="card-text text-secondary">Aplicacion, aun en desarrollo de una plataforma para una academia online</p>
     <p className="card-text text-secondary">Creado con React, Vite, Node, Express, axios, PostgreSQL, Sequelize y bwip-js </p>
     <h1 className="card-text text-secondary"><FaReact/> <SiVite /> <SiJavascript /> <FaNode /> <SiExpress /> <SiAxios /> <SiMongodb /> <SiMongoosedotws /> </h1>
-          <img src="./src/assets/imgProyectos/tableroAdminsAcademi.jpg" class="img-fluid rounded" alt="Responsive image"/>
+          <img src={AcademiaAdmins} className="img-fluid rounded" alt="Responsive image"/>
           <div className="card-body">
             
             
@@ -288,7 +293,7 @@ realizar aportes sindicales</p>
  <div className='container-md p-5'>
         <div className="row">
           <div className="col-md-6">
-            <img src="./src/assets/imgProyectos/agencia_tucuman.png" className="img-fluid rounded" alt="Imagen de proyecto" />
+            <img src={AgTucuman} className="img-fluid rounded" alt="Imagen de proyecto" />
           </div>
           <div className="col-md-6">
             <div className="card bg-transparent">
@@ -313,7 +318,7 @@ Desarrollar la app usando HTML y CSS.
       <div className='container-md p-5 mb-5'>
         <div className="row">
           <div className="col-md-6">
-            <img src="./src/assets/imgProyectos/rollingame.jpg" className="img-fluid rounded" alt="Imagen de proyecto" />
+            <img src={rollingameImage} className="img-fluid rounded" alt="Imagen de proyecto" />
           </div>
           <div className="col-md-6">
             <div className="card bg-transparent">

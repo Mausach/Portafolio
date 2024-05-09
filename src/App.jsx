@@ -3,6 +3,13 @@ import { NavBar } from './componentes/Navbar'
 import { Footer } from './componentes/Footer'
 import { Link } from 'react-router-dom'
 
+import perfilImage from './componentes/assets/imgProyectos/perfil3.jpg';
+import nosotrosImage from './componentes/assets/imgProyectos/Nosotros2_.jpg';
+import codeExpressImage from './componentes/assets/imgProyectos/Codeexpress1.jpg';
+import loginImage from './componentes/assets/imgProyectos/login.png';
+import rollingameImage from './componentes/assets/imgProyectos/rollingame.jpg';
+import agenciaTucumanImage from './componentes/assets/imgProyectos/agencia_tucuman.png';
+import certificadoImage from './componentes/assets/imgProyectos/certificado.png';
 
 
 
@@ -56,9 +63,9 @@ function App() {
       </div>
 
       <div className='container2'>
-        <div class="container">
-          <div class="foto-enmarcada">
-            <img src="./src/assets/imgProyectos/perfil3.jpg" alt="Proyecto 1" />
+        <div className="container">
+          <div className="foto-enmarcada">
+            <img src={perfilImage} alt="Proyecto 1" />
           </div>
 
 
@@ -74,32 +81,32 @@ function App() {
           <br></br>@Sociales</h2>
 
           {/*apartado de sociales*/}
-          <div class="row">
+          <div className="row">
 
-            <div class="col m-3">
-              <a href="https://github.com/Mausach" class="btn btn-outline-warning btn-lg">
+            <div className="col m-3">
+              <a href="https://github.com/Mausach" className="btn btn-outline-warning btn-lg">
                 <h3>
-                  <i class="bi bi-github"> </i>
+                  <i className="bi bi-github"> </i>
 
                 </h3>
                 <h3>Githube</h3>
               </a>
             </div>
 
-            <div class="col m-3">
-              <a href="https://drive.google.com/file/d/1SkootlvyjBaRDk6WMFIw0HMforANlFnl/view" class="btn btn-outline-warning btn-lg">
+            <div className="col m-3">
+              <a href="https://drive.google.com/file/d/1SkootlvyjBaRDk6WMFIw0HMforANlFnl/view" className="btn btn-outline-warning btn-lg">
                 <h3>
-                  <i class="bi bi-person-lines-fill"> </i>
+                  <i className="bi bi-person-lines-fill"> </i>
 
                 </h3>
                 <h3>Curriculum</h3>
               </a>
             </div>
 
-            <div class="col m-3">
-              <a href="https://www.linkedin.com/in/mauro-gabriel-yba%C3%B1ez-261942269/" class="btn btn-outline-warning btn-lg">
+            <div className="col m-3">
+              <a href="https://www.linkedin.com/in/mauro-gabriel-yba%C3%B1ez-261942269/" className="btn btn-outline-warning btn-lg">
                 <h3>
-                  <i class="bi bi-linkedin"> </i>
+                  <i className="bi bi-linkedin"> </i>
 
                 </h3>
                 <h3>Linkedin</h3>
@@ -107,16 +114,16 @@ function App() {
             </div>
           </div>
 
-          <div class="row">
+          <div className="row">
 
-            <div class="col m-3">
+            <div className="col m-3">
               <h4 className='text-secondary'>
                 maurogabriely@gmail.com
               </h4>
             </div>
 
-            <div class="col m-3">
-              <a href="mailto:maurogabriely@gmail.com" class="btn btn-outline-warning">Contáctame</a>
+            <div className="col m-3">
+              <a href="mailto:maurogabriely@gmail.com" className="btn btn-outline-warning">Contáctame</a>
             </div>
 
 
@@ -301,15 +308,15 @@ function App() {
 
               <div className='gallery'>
 
-                <img src="./src/assets/imgProyectos/Nosotros2_.jpg" alt="Proyecto 1" />
+                <img src={nosotrosImage} alt="Proyecto 1" />
 
-                <img src="./src/assets/imgProyectos/Codeexpress1.jpg" alt="Proyecto 2" />
+                <img src={codeExpressImage} alt="Proyecto 2" />
 
-                <img src="./src/assets/imgProyectos/login.png" alt="Proyecto 3" />
+                <img src={loginImage} alt="Proyecto 3" />
 
-                <img src="./src/assets/imgProyectos/rollingame.jpg" alt="Proyecto 4" />
+                <img src={rollingameImage} alt="Proyecto 4" />
 
-                <img src="./src/assets/imgProyectos/agencia_tucuman.png" alt="Proyecto 5" />
+                <img src={agenciaTucumanImage} alt="Proyecto 5" />
 
               </div>
 
@@ -415,7 +422,7 @@ function App() {
           </div>
 
           <div className="col-md-6">
-            <img src="./src/assets/imgProyectos/certificado.png" className="img-fluid rounded" alt="Imagen de proyecto" />
+            <img src={certificadoImage} className="img-fluid rounded" alt="Imagen de proyecto" />
           </div>
         </div>
       </div>
